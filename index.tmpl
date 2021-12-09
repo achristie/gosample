@@ -19,6 +19,24 @@
 
     <button type="submit">Submit</button>
   </form>
+
+  <hr>
+  <table>
+    <thead>
+      <th>Name</th>
+      <th>Age</th>
+      <th>Weight</th>
+    </thead>
+    <tbody>
+      {{ range .}}
+      <tr>
+        <td>{{ .Name}}</td>
+        <td>{{ .Age}}</td>
+        <td>{{ .Weight}}</td>
+      </tr>
+      {{end}}
+    </tbody>
+  </table>
   
 </body>
 </html>
